@@ -50,8 +50,9 @@ public class Application {
 		RestTemplate restTemplate = new RestTemplate();
 		String url;
 		WeatherData weather;
-		System.out.println("Current relative path is: " + currentURL);
-		URL urlZip = new URL(currentURL + "/DA_RESTApiWeather/vlaanderen-zip.txt");
+		//System.out.println("Current relative path is: " + currentURL);
+		//URL urlZip = new URL(currentURL + "/DA_RESTApiWeather/vlaanderen-zip.txt");
+		URL urlZip = new URL("http://java.cyclone2.khleuven.be:38034/r0298778_DA_DisplaySiteToTestOwnRESTAPI/vlaanderen-zip.txt");
 		br = new BufferedReader(new InputStreamReader(urlZip.openStream()));
 		//br = new BufferedReader(new FileReader("vlaanderen-zip.txt"));
 		String line = null;

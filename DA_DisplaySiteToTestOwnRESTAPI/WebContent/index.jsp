@@ -43,7 +43,8 @@
 							console.log(weatherDescrip)
 						});
 						$('#weather').html(weatherDescrip);
-						//setTimeout(showWeather, 5000);
+						//updates every 10min
+						setTimeout(showWeather, 600000);
 					});
 		}
 		function showStatistics() {
@@ -61,7 +62,8 @@
 						});
 						console.log(statisticsDescrip);
 						$('#statistics').html(statisticsDescrip);
-						//setTimeout(showWeather, 5000);
+						//updates every 10min
+						setTimeout(showWeather, 600000);
 					});
 		}
 	</script>
